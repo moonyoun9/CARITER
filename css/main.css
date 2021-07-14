@@ -1,0 +1,337 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'lowan';
+    src: url(../font/bitstream_iowan_old_style_bt.ttf);
+}
+* {
+    font-family: 'lowan';
+}
+#wrap {
+    width: 100%;
+    min-width: 1280px;
+    overflow: hidden;
+}
+.inner {
+    width: 1240px;
+    margin: 0 auto;
+}
+/* start */
+header {
+    position: relative;
+}
+header .notice {
+    background-color: #222;
+    color: #fff;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    overflow: hidden;
+}
+#rollText1 { 
+    position: relative; 
+    font-size: 14px; 
+    margin: 0px; 
+}
+/* #rollText1 li{
+    height:50px; 
+} */
+header .logo {
+    width: 60px;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+header .logo img {
+    width: 100%;
+}
+nav {
+    width: 100%;
+    display: flex;
+}
+nav .menu_left {
+    margin-left: 5px;
+}
+nav .menu_left li {
+    float: left;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+}
+nav .menu_right {
+    margin-left: 530px;
+}
+nav .menu_right li {
+    float: left;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+}
+/* nav .menu_left .sub_menu {
+    width: 1240px;
+    height: 300px;
+    background-color: rgba(255, 255, 255, 0.349);
+    position: absolute;
+    left: 152px;
+    z-index: 10;
+} */
+nav ul li a:hover {
+    color: rgb(138, 52, 52);
+    font-weight: bold;
+}
+header .inner_out {
+    position: absolute;
+    top: 100px;
+    right: 10px;
+}
+header .inner_out .search input {
+    width: 125px;
+    border: none;
+    border-bottom: 1px solid #222;
+    margin-top: 6px;
+    margin-left: 35px;
+}
+header .inner_out .search img {
+    position: absolute;
+    top: 0;
+    left: 137px;
+    width: 12%;
+}
+header .inner_out .icon {
+    margin-top: 15px;
+    margin-left: 40px;
+}
+header .inner_out .icon span {
+    padding: 6px;
+}
+header .inner_out .icon img {
+    width: 17%;
+}
+/* slide */
+.slide {
+    width: 1200px;
+    height: 685px;
+    position: relative;
+    left: 50%; 
+    transform: translateX(-50%);
+}
+.slide div a {
+    position: absolute;
+    opacity: 0;
+    transition: .5s;
+    top: 0;
+    left: 1200px;
+    visibility: hidden;
+}
+.slide div a.active {
+    opacity: 1;
+    left: 0;
+    visibility: visible;
+}
+/* section-collection */
+.collection {
+    width: 100%;
+    height: 500px;
+}
+.collection .line_left {
+    border: 2px solid #222;
+    width: 400px;
+    float: left;
+    margin-top: 80px;
+}
+.collection .line_right {
+    border: 2px solid #222;
+    width: 400px;
+    float: right;
+    margin-top: 80px;
+}
+.collection h1 {
+    float: left;
+    margin-left: 35px;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+.collection .line_right {
+    float: right;
+}
+.collection .img div {
+    width: 590px;
+    float: left;
+    margin-right: 25px;
+}
+.collection .img div:nth-child(2) {
+    margin-right: 0;
+}
+.collection .img div img {
+    width: 100%;
+}
+.collection .img div img:first-child {
+    margin-left: 20px;
+}
+.collection .product_txt p {
+    color: #222;
+    font-size: 1.7rem;
+    margin-left: 115px;
+}
+.collection .product_txt p:first-child {
+    margin-top: 110px;
+    font-size: 1.9rem;
+}
+.collection .clash {
+    position: relative;
+}
+.collection .clash .product_txt {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.699);
+    color: #fff;
+    top: 0;
+    left: 315px;
+    transition: 0.4s;
+}
+.collection .clash .product_txt:hover {
+    background-color: rgba(34, 34, 34, 0.685);
+}
+.collection .clash .product_txt:hover >p {
+    color: #fff;
+}
+.collection .clash .product_txt p:nth-child(2) {
+    margin-left:150px;
+}
+.collection .double {
+    position: relative;
+}
+.collection .double .product_txt {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.699);
+    color: #fff;
+    top: 0;
+    left: 315px;
+    transition: 0.4s;
+}
+.collection .double .product_txt p:first-child {
+    margin-top: 110px;
+    margin-left: 60px;
+}
+.collection .double .product_txt p:nth-child(2) {
+    margin-left: 150px;
+}
+.collection .double .product_txt:hover {
+    background-color: rgba(34, 34, 34, 0.685);
+}
+.collection .double .product_txt:hover >p {
+    color: #fff;
+}
+.collection .more {
+    font-size: 1.2rem;
+    background-color: #222;
+    color: #fff;
+    float: right;
+    margin-right: 30px;
+    padding: 5px 10px;
+    margin-top: 10px;
+    transition: 0.4s;
+}
+.collection .more:hover {
+    color: #222;
+    background-color: #fff;
+}
+/* section-banner */
+.banner {
+    width: 100%;
+    height: 280px;
+    position: relative;
+}
+.banner p {
+    border: 2px solid #222;
+    width: 400px;
+    float: left;
+    margin-top: 30px;
+}
+.banner h1 {
+    float: left;
+    margin-left: 40px;
+    margin-top: 10px;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+.banner .line_right {
+    float: right;
+}
+.banner .banner_slide a {
+    position: absolute;
+    visibility: hidden;
+    top: 95px;
+    opacity: 0;
+    transition: .5s;
+    left: 50%; 
+    transform: translateX(-50%);
+}
+.banner .banner_slide a.active {
+    opacity: 1;
+    visibility: visible;
+}
+/* footer */
+footer {
+    width: 100%;
+    height: 380px;
+    background-color: #222;
+    padding: 30px 0;
+    box-sizing: border-box;
+    color: #fff;
+}
+footer .text_logo img {
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+footer .sns {
+    text-align: center;
+    margin-top: 30px;
+    margin-left: 0px;
+}
+footer .sns a {
+    margin-right: 30px;
+}
+footer .copy1 {
+    margin-left: 160px;
+    margin-top: 15px;
+}
+footer .copy1 li {
+    float: left;
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 0.9rem;
+}
+footer .line {
+    width: 100%;
+    border: 1px solid #fff;
+    margin-top: 70px;
+    margin-bottom: 10px;;
+}
+footer .copy2 {
+    margin-left: 290px;
+}
+footer .copy2 li {
+    float: left;
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 0.9rem;
+}
+footer .copy3 {
+    margin-top: 50px;
+    margin-left: 260px;
+}
+footer .copy3 li {
+    float: left;
+    padding: 10px 30px;
+    font-size: 0.9rem;
+}
+footer p {
+    font-size:0.8rem;
+    text-align: center;
+}
+footer p.contact {
+    margin-top: 100px;
+    margin-bottom: 10px;
+}
